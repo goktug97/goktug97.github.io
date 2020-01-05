@@ -27,12 +27,11 @@ url: "https://goktug97.github.io/" # the base hostname & protocol for your site,
 # twitter_username: jekyllrb
 github_username:  goktug97
 
-# Build settings
-kramdown:
-  input: GFM
 theme: minima
 plugins:
   - jekyll-feed
+
+markdown: CommonMarkGhPages
 
 # Exclude from processing.
 # The following items will not be processed, by default.
