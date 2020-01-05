@@ -28,6 +28,8 @@ url: "https://goktug97.github.io/" # the base hostname & protocol for your site,
 github_username:  goktug97
 
 # Build settings
+kramdown:
+  input: GFM
 theme: minima
 plugins:
   - jekyll-feed
