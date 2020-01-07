@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using Python as a Configuration File"
-date:   2020-01-07 9:17:23 +0300
+date:   2020-01-07 21:17:23 +0300
 categories: Python
 ---
 

@@ -3,8 +3,6 @@ layout: page
 permalink: /dwa/
 ---
 
-# Dynamic Window Approach Web Demo
-
 Draw obstacles and it will follow your mouse while avoiding obstacles using
 Dynamic Window Approach. Press R to reset.
 
