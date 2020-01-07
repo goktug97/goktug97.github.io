@@ -70,7 +70,7 @@ def check(node_or_string, allowed_modules={}, allowed_functions=[],
             return
         elif isinstance(node, ast.Name):
             if node.id in aliases.keys():
-                raise ValueError('Assigning modules are not allowed')
+                raise ValueError('Assigning modules is not allowed')
             return
 
         ...
