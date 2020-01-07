@@ -101,7 +101,7 @@ To prevent importing this, it makes sure only installed packages are imported.
 I have named the package `mpcs` which stands for my personal
 configuration system.
 
-Install: `pip3 install mpcs`
+Install: `pip3 install python-mpcs`
 
 Source Code: [Github MPCS](https://github.com/goktug97/mpcs)
 
