@@ -98,12 +98,12 @@ def zeros(*args, **kwargs):
 
 To prevent importing this, it makes sure only installed packages are imported.
 
-I have named the package `mpcs` which stands for my personal
-configuration system.
+I have named the package `mpcspy` which stands for my personal
+configuration system for python.
 
-Install: `pip3 install python-mpcs`
+Install: `pip3 install mpcspy`
 
-Source Code: [Github MPCS](https://github.com/goktug97/mpcs)
+Source Code: [Github MPCSPY](https://github.com/goktug97/mpcspy)
 
 # An Example
 ## config file
@@ -121,8 +121,8 @@ class Robot(object):
 ```
 ## importing
 ```python
-import mpcs
-config = mpcs.read_config(config_file = 'config',
+import mpcspy
+config = mpcspy.read_config(config_file = 'config',
         allowed_modules={'numpy': ['radians'],
             'dataclasses': ['dataclass']},
         allowed_functions=[],
