@@ -62,6 +62,7 @@ network trained both with DIV2K [2] and the custom dataset with 24
 patch size for comparison.
 
 ### Benchmarks
+Set5[3], Set14[6], BSDS100[5], Urban100[4]
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa;}
@@ -74,8 +75,8 @@ patch size for comparison.
     <th class="tg-0lax">PSNR</th>
     <th class="tg-0lax">Set5</th>
     <th class="tg-0lax">Set14</th>
-    <th class="tg-0lax">BSD100</th>
-    <th class="tg-0lax">Urban</th>
+    <th class="tg-0lax">BSDS100</th>
+    <th class="tg-0lax">Urban100</th>
   </tr>
   <tr>
     <td class="tg-0lax">DIV2K</td>
@@ -104,5 +105,22 @@ might have generalized to real world.
 [https://github.com/goktug97/randomshapes](https://github.com/goktug97/randomshapes)
 
 ### References
-1. Bee Lim and Sanghyun Son and Heewon Kim and Seungjun Nah and Kyoung Mu Lee (2017). Enhanced Deep Residual Networks for Single Image Super-ResolutionCoRR, abs/1707.02921.
-2. Agustsson, E., & Timofte, R. (2017). NTIRE 2017 Challenge on Single Image Super-Resolution: Dataset and Study. In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops.
+1. Bee Lim and Sanghyun Son and Heewon Kim and Seungjun Nah and Kyoung
+Mu Lee (2017). Enhanced Deep Residual Networks for Single Image
+Super-ResolutionCoRR, abs/1707.02921.
+2. Agustsson, E., & Timofte, R. (2017). NTIRE 2017 Challenge on Single
+Image Super-Resolution: Dataset and Study. In The IEEE Conference
+on Computer Vision and Pattern Recognition (CVPR) Workshops.
+3. M. Bevilacqua, A. Roumy, C. Guillemot, and M. L. Alberi- Morel
+(2012). Low-complexity single-image super-resolution based on
+nonnegative neighbor embedding. In BMVC.
+4. J.-B. Huang, A. Singh, and N. Ahuja (2015). Single image super-
+resolution from transformed self-exemplars.  In The IEEE Conference on
+Computer Vision and Pattern Recognition (CVPR) Workshops.
+5. D. Martin, C. Fowlkes, D. Tal, and J. Malik (2001). A database of
+human segmented natural images and its application to evaluating
+segmentation algorithms and measuring ecological statistics. In
+ICCV.
+6. R. Zeyde, M. Elad, and M. Protter (2010). On single image scale-up
+using sparse-representations. In Proceedings of the International
+Conference on Curves and Surfaces.
