@@ -1,6 +1,9 @@
 ---
-layout: page
+layout: post
 permalink: /dwa/
+date:   2020-01-05 19:31:54 +0300
+categories: demo
+tags: [C, OpenGL, WebGL]
 ---
 
 Draw obstacles and it will follow your mouse while avoiding obstacles using

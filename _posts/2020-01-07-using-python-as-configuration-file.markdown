@@ -2,7 +2,7 @@
 layout: post
 title:  "Using Python as a Configuration File"
 date:   2020-01-07 21:17:23 +0300
-categories: Python
+categories: python
 ---
 
 While there are bunch of other configuration systems, I like to use
