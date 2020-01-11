@@ -8,12 +8,10 @@ tags: [super-resolution, deep-learning, python]
 
 ![Random Shapes](/assets/images/random_shapes.png)
 
-*Not Complete Yet*
-
 To see if a super-resolution can generalize from randomly generated
-shapes to real world, we trained EDSR [1] with images that are generated
+shapes to real world, we trained EDSR [2] with images that are generated
 randomly. One of them can be seen above. Images from 800 to 810 from
-DIV2K [2] are used for evalution between epochs during training.
+DIV2K [1] are used for evalution between epochs during training.
 
 To create images similar to the above, we used gaussian distribution
 with different means and standart deviations for different
@@ -51,19 +49,73 @@ high=**2π**)
 std=**color_std**): Calculated for each channel separately.
 - **number_of_shapes** = 10000
 
-Color mean and standart deviation are calculated from DIV2K [2], They are
-the mean and the standart devation of images between 001-800.
+Color mean and standart deviation are calculated from DIV2K [1] 001-800 images.
 
 ### Training
 
-We trained the network the same as the paper [1] except the patch
+We trained the network the same as the paper [2] except the patch
 size. We used patch size of 24 instead of 192 to train it faster. The
-network trained both with DIV2K [2] and the custom dataset with 24
-patch size for comparison.
+network trained both with DIV2K [1] and the custom dataset in x2 scale
+for comparison.
 
+#### Loss
+
+Although we stopped training for the random shapes earlier because it
+wasn't getting any better in terms of PSNR, it's loss was lower than
+the DIV2K [1]. It seems that learning this type of image type is far
+easier and I think it is due to the sharp gradient changes and being
+noise free.
+
+<div style="display:flex">
+     <div style="flex:1;padding-right:5px;">
+         <img src="/assets/images/div2k_l1_loss.png">
+         <div class="text-block">
+         <center>
+         <p>DIV2K</p>
+         </center>
+         </div>
+     </div>
+     <div style="flex:1;padding-left:5px;">
+         <img src="/assets/images/shapes_l1_loss.png">
+         <div class="text-block">
+         <center>
+         <p>Random Shapes</p>
+         </center>
+         </div>
+     </div>
+</div>
+
+#### PSNR
+
+While loss decrease is promising, random shapes' PSNR during training
+didn't performed as good as DIV2K [1] PSNR. In fact random shapes' PSNR
+decreased instead of rising as the training goes.
+
+<div style="display:flex">
+     <div style="flex:1;padding-right:5px;">
+         <img src="/assets/images/div2k_l1_psnr.png">
+         <div class="text-block">
+         <center>
+         <p>DIV2K</p>
+         </center>
+         </div>
+     </div>
+     <div style="flex:1;padding-left:5px;">
+         <img src="/assets/images/shapes_l1_psnr.png">
+         <div class="text-block">
+         <center>
+         <p>Random Shapes</p>
+         </center>
+         </div>
+     </div>
+</div>
+
+<!-- 
 ### Benchmarks
 Set5[3], Set14[6], BSDS100[5], Urban100[4]
+-->
 
+<!--
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa;}
 .tg td{padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;}
@@ -93,34 +145,40 @@ Set5[3], Set14[6], BSDS100[5], Urban100[4]
     <td class="tg-0lax"></td>
   </tr>
 </table>
+-->
 
 ### Conclusion
 
-If everything was colorful rectangles and circles, this technique
-might have generalized to real world. 
-
+In conclusion, a network trained with a dataset that has only colorful
+rectangles and circles can't generalize to real world applications. If
+everything was colorful rectangles and circles, the network might have
+generalized.
 
 ### Code
 
 [https://github.com/goktug97/randomshapes](https://github.com/goktug97/randomshapes)
 
 ### References
-1. Bee Lim and Sanghyun Son and Heewon Kim and Seungjun Nah and Kyoung
-Mu Lee (2017). Enhanced Deep Residual Networks for Single Image
-Super-ResolutionCoRR, abs/1707.02921.
-2. Agustsson, E., & Timofte, R. (2017). NTIRE 2017 Challenge on Single
+1. Agustsson, E., & Timofte, R. (2017). NTIRE 2017 Challenge on Single
 Image Super-Resolution: Dataset and Study. In The IEEE Conference
 on Computer Vision and Pattern Recognition (CVPR) Workshops.
-3. M. Bevilacqua, A. Roumy, C. Guillemot, and M. L. Alberi- Morel
-(2012). Low-complexity single-image super-resolution based on
-nonnegative neighbor embedding. In BMVC.
-4. J.-B. Huang, A. Singh, and N. Ahuja (2015). Single image super-
-resolution from transformed self-exemplars.  In The IEEE Conference on
-Computer Vision and Pattern Recognition (CVPR) Workshops.
-5. D. Martin, C. Fowlkes, D. Tal, and J. Malik (2001). A database of
+2. Bee Lim and Sanghyun Son and Heewon Kim and Seungjun Nah and Kyoung
+Mu Lee (2017). Enhanced Deep Residual Networks for Single Image
+Super-ResolutionCoRR, abs/1707.02921.
+<!--
+3. Marco Bevilacqua, Aline Roumy, Christine Guillemot, & Marie-line
+Alberi Morel (2012). Low-Complexity Single-Image Super-Resolution
+based on Nonnegative Neighbor Embedding. In Proceedings of the British
+Machine Vision Conference (pp. 135.1–135.10). BMVA Press.
+4. J. Huang, A. Singh, & N. Ahuja (2015). Single image super-resolution
+from transformed self-exemplars. In 2015 IEEE Conference on Computer
+Vision and Pattern Recognition (CVPR) (pp. 5197-5206).
+5. D. Martin, C. Fowlkes, D. Tal, & J. Malik (2001). A database of
 human segmented natural images and its application to evaluating
 segmentation algorithms and measuring ecological statistics. In
-ICCV.
+Proceedings Eighth IEEE International Conference on Computer
+Vision. ICCV 2001 (pp. 416-423 vol.2).
 6. R. Zeyde, M. Elad, and M. Protter (2010). On single image scale-up
 using sparse-representations. In Proceedings of the International
 Conference on Curves and Surfaces.
+-->
