@@ -87,7 +87,7 @@ noise free.
 
 #### PSNR
 
-While loss decrease is promising, random shapes' PSNR during training
+While loss decrease looks promising, random shapes' PSNR during training
 didn't performed as good as DIV2K [1] PSNR. In fact random shapes' PSNR
 decreased instead of rising as the training goes.
 
