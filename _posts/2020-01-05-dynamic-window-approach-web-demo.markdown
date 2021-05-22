@@ -24,6 +24,45 @@ canvas: (function() {
 };
 </script>
 <script src="/assets/js/dwa.js"></script>
+<script type="text/javascript" src="/assets/js/dat.gui.min.js"></script>
+<script type="text/javascript">
+    update_config = Module.cwrap('update_config', ['number', 'number',
+            'number', 'number', 'number']);
+
+    var obj = {
+            dt: 0.1,
+            PredictTime: 1.0,
+            Heading: 0.15,
+            Clearance: 1.0,
+            Velocity: 1.0,
+        };
+
+    var gui = new dat.gui.GUI();
+
+    gui.remember(obj);
+
+    gui.add(obj, 'PredictTime').min(0.0).onChange(function () {
+            update_config(obj.dt, obj.PredictTime, obj.Heading,
+                    obj.Clearance, obj.Velocity);
+        });;
+    gui.add(obj, 'dt').min(0.0).max(1.0).step(0.01).onChange(function () {
+            update_config(obj.dt, obj.PredictTime, obj.Heading,
+                    obj.Clearance, obj.Velocity);
+        });
+    gui.add(obj, 'Heading').min(0.0).max(1.0).step(0.01).onChange(function () {
+            update_config(obj.dt, obj.PredictTime, obj.Heading,
+                    obj.Clearance, obj.Velocity);
+        });;
+    gui.add(obj, 'Clearance').min(0.0).max(1.0).step(0.01).onChange(function () {
+            update_config(obj.dt, obj.PredictTime, obj.Heading,
+                    obj.Clearance, obj.Velocity);
+        });;
+    gui.add(obj, 'Velocity').min(0.0).max(1.0).step(0.01).onChange(function () {
+            update_config(obj.dt, obj.PredictTime, obj.Heading,
+                    obj.Clearance, obj.Velocity);
+        });;
+</script>
+
 <!-- -->
 
 - Web Demo Source Code: [DWAGL](https://github.com/goktug97/DWAGL)
