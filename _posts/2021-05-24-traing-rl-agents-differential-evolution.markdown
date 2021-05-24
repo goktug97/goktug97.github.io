@@ -133,6 +133,6 @@ In conclusion, I think differential evolution has a potentional in reinforcement
   author  = "Karakasli, Goktug",
   journal = "goktug97.github.io",
   year    = "2021",
-  url     = "https://goktug97.github.io/research/2021/05/24/traing-rl-agents-differential-evolution.html"
+  url     = "https://goktug97.github.io/research/2021/05/23/traing-rl-agents-differential-evolution.html"
 }
 ```
