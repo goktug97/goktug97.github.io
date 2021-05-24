@@ -79,7 +79,7 @@ I found out that lower crossover probabilities work much better with high dimens
 So to calculate crossover probability based on network size, I come up with this formula;
 $$ \frac{1}{\log(\text{size}) * \sqrt{2\pi}} * e^{-\frac{1}{2}} $$
 
-The problem is, even though DE achieved really high rewards during training, trained agents didn't perform well during evalution. I thought some sort of regularization of the weights might help agents to generalize better. So I applied L2 decay to mutated individuals to make them generalize better. While it helped a little bit, they were still not as good as NES (Natural Evolution Strategy) trained agents. So I combined two algorithms together, using DE to quickly explore good regions and then fine tuning the trained agents using NES. This is a good strategy because DE also performs very well in sparse reward environments such as `MountainCar-v0`.
+The problem is, even though DE achieved really high rewards during training, trained agents didn't perform well during evaluation. I thought some sort of regularization of the weights might help agents to generalize better. So I applied L2 decay to mutated individuals to make them generalize better. While it helped a little bit, they were still not as good as NES (Natural Evolution Strategy) trained agents. So I combined two algorithms together, using DE to quickly explore good regions and then fine tuning the trained agents using NES. This is a good strategy because DE also performs very well in sparse reward environments such as `MountainCar-v0`.
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
