@@ -4,6 +4,7 @@ title:  "Training Neural Networks with Differential Evolution for Reinforcement 
 date:   2021-05-23 23:30:00
 categories: research
 tags: [differential-evolution, evolution-strategy, reinforcement-learning, python]
+permalink: /research/training-nn-with-differential-evolution
 ---
 
 <div>
@@ -133,6 +134,6 @@ In conclusion, I think differential evolution has a potentional in reinforcement
   author  = "Karakasli, Goktug",
   journal = "goktug97.github.io",
   year    = "2021",
-  url     = "https://goktug97.github.io/research/2021/05/23/traing-rl-agents-differential-evolution.html"
+  url     = "https://goktug97.github.io/research/training-nn-with-differential-evolution"
 }
 ```
