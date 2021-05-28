@@ -5,6 +5,7 @@ date:   2021-05-23 23:30:00
 categories: research
 tags: [differential-evolution, evolution-strategy, reinforcement-learning, python]
 permalink: /research/training-nn-with-differential-evolution
+image: /assets/images/de/lunarlander.gif
 ---
 
 <div>

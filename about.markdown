@@ -4,6 +4,5 @@ title: About
 permalink: /about/
 ---
 
-I am an electronics engineer working on computer vision, robotics
-and machine learning. I mostly use Python and C programming languages
-for my projects. I publish my personal projects on [Github](https://github.com/goktug97).
+I am an electronics engineer working on machine learning, computer vision, robotics.
+Currently working as a research assistant in Freiburg University Machine Learning Lab and doing master's degree in Computer Science.

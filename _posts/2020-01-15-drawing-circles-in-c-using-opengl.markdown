@@ -4,6 +4,7 @@ title:  "Drawing Circles in C using Modern OpenGL"
 date:   2020-01-15 19:43:14 +0300
 categories: tutorial
 tags: [opengl, c]
+image: /assets/images/circles.gif
 ---
 
 Recently, I wrote [a library for the algorithm dynamic window approach in
