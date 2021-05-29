@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Training Neural Networks with Differential Evolution for Reinforcement Learning Tasks"
-date:   2021-05-23 23:30:00
+title: "Training Neural Networks with Differential Evolution for Reinforcement Learning Tasks"
+date: 2021-05-23 23:30:00
 categories: research
 tags: [differential-evolution, evolution-strategy, reinforcement-learning, python]
 permalink: /research/training-nn-with-differential-evolution
@@ -124,8 +124,8 @@ In conclusion, I think differential evolution has a potentional in reinforcement
 
 
 # References
-- [https://en.wikipedia.org/wiki/Differential_evolution](https://en.wikipedia.org/wiki/Differential_evolution)
-- [https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.differential_evolution.html](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.differential_evolution.html)
+- Storn, Rainer, and Kenneth Price. “Differential Evolution – A Simple and Efficient Heuristic for Global Optimization over Continuous Spaces.” Journal of Global Optimization, vol. 11, no. 4, Dec. 1997, pp. 341–59. Springer Link, doi:10.1023/A:1008202821328.
+- Scipy.Optimize.Differential_evolution — SciPy v1.6.3 Reference Guide. https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.differential_evolution.html. Accessed 29 May 2021.
 
 # Citation
 
