@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% seo %}
+  <script type="text/javascript" src="/assets/js/blazy.min.js"</script>
+
   {%- include head.html -%}
 
   <body>
@@ -17,8 +19,17 @@
 
   </body>
 
+  <script type="text/javascript" id="MathJax-script" async
+          src="/assets/js/MathJax/es5/tex-mml-chtml.js">
+  </script>
+
+  <script>
+    (function() {
+        var bLazy = new Blazy({
+            // Options
+        });
+    })();
+  </script>
+
 </html>
 
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>

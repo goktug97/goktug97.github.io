@@ -4,7 +4,7 @@ title:  "Drawing Circles in C using Modern OpenGL"
 date:   2020-01-15 19:43:14 +0300
 categories: tutorial
 tags: [opengl, c]
-image: /assets/images/circles.gif
+video: /assets/images/circles.mp4
 ---
 
 Recently, I wrote [a library for the algorithm dynamic window approach in
@@ -105,7 +105,13 @@ gcc circles.c -lSDL2 -lGLESv2 -o circles
 
 Now we have a window to work with.
 
-![SDL Window](/assets/images/sdl_window.jpg)
+<div style="display:flex">
+     <div style="flex:1">
+         <center>
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/sdl_window.jpg" style="display: block; margin: auto; width: 100%;"/>
+         </center>
+     </div>
+</div>
 
 ### OpenGL
 
@@ -121,7 +127,7 @@ Let's start with vertices for the circle.
 
 <div style="display:flex">
      <div style="flex:1;">
-         <img src="/assets/images/circle_cos_sin.gif">
+         <video class="b-lazy" data-src="/assets/images/circle_cos_sin.mp4" type="video/mp4" autoplay muted playsinline loop style="display: block; margin: auto;" ></video>
          <div class="text-block">
          <center>
          <p>
@@ -369,7 +375,8 @@ gcc main.c -lSDL2 -lGLESv2 -lm -o circles -I ./cglm/include/
 [CGLM Library](https://github.com/recp/cglm)
 
 ### Result
-![Circles GIF](/assets/images/circles.gif)
+
+<video class="b-lazy" data-src="/assets/images/circles.mp4" type="video/mp4" autoplay muted playsinline loop style="display: block; margin: auto; width=100%" ></video>
 
 ### Full Code
 

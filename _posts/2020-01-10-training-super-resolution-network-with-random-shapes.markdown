@@ -7,7 +7,13 @@ tags: [super-resolution, deep-learning, python]
 image: /assets/images/random_shapes.png
 ---
 
-![Random Shapes](/assets/images/random_shapes.png)
+<div style="display:flex">
+     <div style="flex:1">
+         <center>
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/random_shapes.png" style="display: block; margin: auto; width: 100%;"/>
+         </center>
+     </div>
+</div>
 
 To see if a super-resolution can generalize from randomly generated
 shapes to real world, we trained EDSR [2] with images that are generated
@@ -69,7 +75,7 @@ noise free.
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-         <img src="/assets/images/div2k_l1_loss.png">
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/div2k_l1_loss.png" style="display: block; margin: auto; width: 100%;"/>
          <div class="text-block">
          <center>
          <p>DIV2K</p>
@@ -77,7 +83,7 @@ noise free.
          </div>
      </div>
      <div style="flex:1;padding-left:5px;">
-         <img src="/assets/images/shapes_l1_loss.png">
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/shapes_l1_loss.png" style="display: block; margin: auto; width: 100%;"/>
          <div class="text-block">
          <center>
          <p>Random Shapes</p>
@@ -94,7 +100,7 @@ decreased instead of rising as the training goes.
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-         <img src="/assets/images/div2k_l1_psnr.png">
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/div2k_l1_psnr.png" style="display: block; margin: auto; width: 100%;"/>
          <div class="text-block">
          <center>
          <p>DIV2K</p>
@@ -102,7 +108,7 @@ decreased instead of rising as the training goes.
          </div>
      </div>
      <div style="flex:1;padding-left:5px;">
-         <img src="/assets/images/shapes_l1_psnr.png">
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/shapes_l1_psnr.png" style="display: block; margin: auto; width: 100%;"/>
          <div class="text-block">
          <center>
          <p>Random Shapes</p>

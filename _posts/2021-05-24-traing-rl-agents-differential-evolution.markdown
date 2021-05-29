@@ -5,12 +5,12 @@ date: 2021-05-23 23:30:00
 categories: research
 tags: [differential-evolution, evolution-strategy, reinforcement-learning, python]
 permalink: /research/training-nn-with-differential-evolution
-image: /assets/images/de/lunarlander.gif
+video: /assets/images/de/lunarlander.mp4
 ---
 
 <div>
 <center>
-<img src="/assets/images/de/lunarlander.gif" width=100%>
+<video class="b-lazy" data-src="/assets/images/de/lunarlander.mp4" type="video/mp4" autoplay muted playsinline loop style="display: block; margin: auto; width: 100%;" ></video>
 </center>
 </div>
 
@@ -38,7 +38,7 @@ In all experiments the `LunarLander-v2` environment from OpenAI `gym` library is
 <div style="display:flex">
      <div style="flex:1">
          <center>
-         <img src="/assets/images/de/highproblowdim.png" width=50%>
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/de/highproblowdim.png" style="display: block; margin: auto; width: 50%;"/>
          </center>
          <div class="text-block">
          <center>
@@ -53,7 +53,7 @@ Above graph shows that differential evolution can quickly get good rewards in re
 <div style="display:flex">
      <div style="flex:1">
          <center>
-         <img src="/assets/images/de/highprobhighdim.png" width=50%>
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/de/highprobhighdim.png" style="display: block; margin: auto; width: 50%;"/>
          </center>
          <div class="text-block">
          <center>
@@ -68,7 +68,7 @@ I found out that lower crossover probabilities work much better with high dimens
 <div style="display:flex">
      <div style="flex:1">
          <center>
-         <img src="/assets/images/de/lowprobhighdim.png" width=50%>
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/de/lowprobhighdim.png" style="display: block; margin: auto; width: 50%;"/>
          </center>
          <div class="text-block">
          <center>
@@ -85,7 +85,7 @@ The problem is, even though DE achieved really high rewards during training, tra
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
-         <img src="/assets/images/de/finetune.png">
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/de/finetune.png" style="display: block; margin: auto;"/>
          <div class="text-block">
          <center>
          <p>50 Generations DE and 50 Generations NES Fine Tuning</p>
@@ -93,7 +93,7 @@ The problem is, even though DE achieved really high rewards during training, tra
          </div>
      </div>
      <div style="flex:1;padding-left:5px;">
-         <img src="/assets/images/de/only_de.png">
+         <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="/assets/images/de/only_de.png" style="display: block; margin: auto;"/>
          <div class="text-block">
          <center>
          <p>100 Generations DE</p>

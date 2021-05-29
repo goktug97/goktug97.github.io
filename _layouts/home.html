@@ -32,7 +32,10 @@ layout: default
           </a>
         </h3>
         {%- if post.image -%}
-            <img src="{{ post.image }}" width=100%/>
+            <img class="b-lazy" src=data:image/png;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{ post.image }}" style="display: block; margin: auto; width: 100%;"/>
+        {%- endif -%}
+        {%- if post.video -%}
+            <video class="b-lazy" data-src="{{ post.video }}" type="video/mp4" autoplay muted playsinline loop style="display: block; margin: auto; width: 100%;" ></video>
         {%- endif -%}
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
