@@ -41,23 +41,23 @@ canvas: (function() {
 
     gui.remember(obj);
 
-    gui.add(obj, 'PredictTime').min(0.0).onChange(function () {
+    gui.add(obj, 'PredictTime').min(1.0).max(10.0).step(0.1).onChange(function () {
             update_config(obj.dt, obj.PredictTime, obj.Heading,
                     obj.Clearance, obj.Velocity);
         });;
-    gui.add(obj, 'dt').min(0.0).max(1.0).step(0.01).onChange(function () {
+    gui.add(obj, 'dt').min(0.1).max(1.0).step(0.01).onChange(function () {
             update_config(obj.dt, obj.PredictTime, obj.Heading,
                     obj.Clearance, obj.Velocity);
         });
-    gui.add(obj, 'Heading').min(0.0).max(1.0).step(0.01).onChange(function () {
+    gui.add(obj, 'Heading').min(0.1).max(1.0).step(0.01).onChange(function () {
             update_config(obj.dt, obj.PredictTime, obj.Heading,
                     obj.Clearance, obj.Velocity);
         });;
-    gui.add(obj, 'Clearance').min(0.0).max(1.0).step(0.01).onChange(function () {
+    gui.add(obj, 'Clearance').min(0.1).max(1.0).step(0.01).onChange(function () {
             update_config(obj.dt, obj.PredictTime, obj.Heading,
                     obj.Clearance, obj.Velocity);
         });;
-    gui.add(obj, 'Velocity').min(0.0).max(1.0).step(0.01).onChange(function () {
+    gui.add(obj, 'Velocity').min(0.1).max(1.0).step(0.01).onChange(function () {
             update_config(obj.dt, obj.PredictTime, obj.Heading,
                     obj.Clearance, obj.Velocity);
         });;
