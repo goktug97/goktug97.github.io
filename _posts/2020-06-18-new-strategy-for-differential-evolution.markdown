@@ -19,7 +19,7 @@ In this blog post I introduced a dynamically scaled strategy called `scaledbest1
 
 # A Dynamically Scaled Strategies
 
-In this strategy difference is calculated as scaled distances of 2 random individuals to the current individual. For scaling, rank transformed rewards are used similar to Salimans, Tim, et al., 2017. But rank transformed rewards are between -1.0 and 1.0 instead of -0.5 and 0.5, so that, if two randomly chosen individuals are the best and the worst, the difference will be the same as `best1bin` or `rand1bin` strategy.
+In these strategies, difference is calculated as scaled distances of 2 random individuals to the current individual. For scaling, rank transformed rewards are used similar to Salimans, Tim, et al., 2017. But rank transformed rewards are between -1.0 and 1.0 instead of -0.5 and 0.5, so that, if two randomly chosen individuals are the best and the worst, the difference will be the same as `best1bin` or `rand1bin` strategy.
 
 $$diff = rank\\_transform(r0\\\_reward) * (r0 - current) + rank\\_transform(r1\\\_reward) * (r1 - current)$$
 $$mutation\\\_vector = best + mutation\\\_factor * diff$$
@@ -108,8 +108,20 @@ new_candidate[cross] = mutation_vector[cross]
 # Code
 The code used to generate plots and animations: [https://github.com/goktug97/DEStrategy](https://github.com/goktug97/DEStrategy)
 
-The strategise are also implemented in [https://github.com/goktug97/de-torch](https://github.com/goktug97/de-torch)
+The strategies are also implemented in [https://github.com/goktug97/de-torch](https://github.com/goktug97/de-torch)
 
-# Citations
+# References
 
 1. Salimans, Tim, et al. “Evolution Strategies as a Scalable Alternative to Reinforcement Learning.” ArXiv:1703.03864 [Cs, Stat], Sept. 2017. arXiv.org, http://arxiv.org/abs/1703.03864.
+
+# Citation
+
+```
+@article{karakasli2021destrategy,
+  title   = "A New Strategy for Differential Evolution",
+  author  = "Karakasli, Goktug",
+  journal = "goktug97.github.io",
+  year    = "2021",
+  url     = "https://goktug97.github.io/research/a-new-strategy-for-differential-evolution"
+}
+```
