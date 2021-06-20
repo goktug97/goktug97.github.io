@@ -17,7 +17,7 @@ video: /assets/images/de_strategy/ackley_2.mp4
 
 In this blog post I introduced a dynamically scaled strategy called `scaledbest1bin` which outperforms other Differential Evolution (DE) strategies in "[Test functions for optimization](https://en.wikipedia.org/wiki/Test_functions_for_optimization)".
 
-# A Dynamically Scaled Strategies
+# Dynamically Scaled Strategies
 
 In these strategies, difference is calculated as scaled distances of 2 random individuals to the current individual. For scaling, rank transformed rewards are used similar to Salimans, Tim, et al., 2017. But rank transformed rewards are between -1.0 and 1.0 instead of -0.5 and 0.5, so that, if two randomly chosen individuals are the best and the worst, the difference will be the same as `best1bin` or `rand1bin` strategy.
 
