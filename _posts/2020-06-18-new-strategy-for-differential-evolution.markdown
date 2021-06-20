@@ -15,9 +15,9 @@ video: /assets/images/de_strategy/ackley_2.mp4
 </center>
 </div>
 
-In this blog post I introduced a dynamically scaled strategy which outperforms other Differential Evolution (DE) strategies in "[Test functions for optimization](https://en.wikipedia.org/wiki/Test_functions_for_optimization)".
+In this blog post I introduced a dynamically scaled strategy called `scaledbest1bin` which outperforms other Differential Evolution (DE) strategies in "[Test functions for optimization](https://en.wikipedia.org/wiki/Test_functions_for_optimization)".
 
-# scaledbest1bin: A Dynamically Scaled Strategy
+# A Dynamically Scaled Strategies
 
 In this strategy difference is calculated as scaled distances of 2 random individuals to the current individual. For scaling, rank transformed rewards are used similar to Salimans, Tim, et al., 2017. But rank transformed rewards are between -1.0 and 1.0 instead of -0.5 and 0.5, so that, if two randomly chosen individuals are the best and the worst, the difference will be the same as `best1bin` or `rand1bin` strategy.
 
@@ -26,6 +26,7 @@ $$mutation\\\_vector = best + mutation\\\_factor * diff$$
 
 Pseudo Python Code:
 ```python
+# scaledbest1bin strategy
 idxs = np.random.choice(np.delete(np.arange(POPULATION_SIZE), j), 2, replace=False)
 current = population[j]
 sub_rewards = rank_transformation(rewards)[idxs]
@@ -36,7 +37,6 @@ cross = np.random.rand(2) <= CROSSOVER_PROBABILITY
 new_candidate = current.copy()
 new_candidate[cross] = mutation_vector[cross]
 ```
-
 
 <div style="display:flex">
      <div style="flex:1;padding-right:5px;">
@@ -107,6 +107,8 @@ new_candidate[cross] = mutation_vector[cross]
 
 # Code
 The code used to generate plots and animations: [https://github.com/goktug97/DEStrategy](https://github.com/goktug97/DEStrategy)
+
+The strategise are also implemented in [https://github.com/goktug97/de-torch](https://github.com/goktug97/de-torch)
 
 # Citations
 
