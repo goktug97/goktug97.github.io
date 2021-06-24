@@ -108,11 +108,13 @@ Below plots show 256 dimensional case for this nonsymmetric initialization.
 
 # Conclusion
 
-If the optimum point is "surrounded" by the population, `soft` crossover converges to global optima faster than the `binomial` crossover for 2D case and high dimensional case except `rastrigin` function. When the population is initialized such that, the optimum point is outside of the population, `soft` crossover is outperformed by `binomial` crossover.
+If the optimum point is "surrounded" by the population, `soft` crossover converges to global optima faster than the `binomial` crossover for 2D case and high dimensional case except `rastrigin` function. When the population is initialized such that, the optimum point is outside of the population, `soft` crossover is outperformed by `binomial` crossover. I think this method can be very reliable for neural networks because usually the "optimal solution" is inside of the population.
 
 # Code
 
 [https://github.com/goktug97/DECrossover](https://github.com/goktug97/DECrossover)
+
+Also implemented in [https://github.com/goktug97/de-torch](https://github.com/goktug97/de-torch)
 
 
 # Citation
