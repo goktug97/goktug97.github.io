@@ -4,6 +4,7 @@ title:  "Training a Super-Resolution Network with Random Shapes"
 date:   2020-01-10 19:10:23 +0300
 categories: research
 tags: [super-resolution, deep-learning, python]
+permalink: /research/training-a-super-resolution-network
 image: /assets/images/random_shapes.png
 ---
 
