@@ -10,7 +10,6 @@ Draw obstacles and it will follow your mouse while avoiding obstacles using
 Dynamic Window Approach. Press R to reset.
 
 <!-- -->
-<!-- {% raw %} -->
 <canvas id=canvas></canvas>
 <script type='text/javascript'>
 var Module = {
@@ -63,7 +62,6 @@ canvas: (function() {
                     obj.Clearance, obj.Velocity);
         });;
 </script>
-<!-- {% endraw %}) -->
 <!-- -->
 
 - Web Demo Source Code: [DWAGL](https://github.com/goktug97/DWAGL)
