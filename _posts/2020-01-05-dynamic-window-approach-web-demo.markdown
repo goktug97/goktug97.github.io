@@ -9,7 +9,10 @@ tags: [C, OpenGL, WebGL]
 Draw obstacles and it will follow your mouse while avoiding obstacles using
 Dynamic Window Approach. Press R to reset.
 
+
+<!-- -->
 <canvas id=canvas></canvas>
+
 <script type='text/javascript'>
 var Module = {
 canvas: (function() {
@@ -22,8 +25,11 @@ canvas: (function() {
          })(),
 };
 </script>
+
 <script src="/assets/js/dwa.js"></script>
+
 <script type="text/javascript" src="/assets/js/dat.gui.min.js"></script>
+
 <script type="text/javascript">
     update_config = Module.cwrap('update_config', ['number', 'number',
             'number', 'number', 'number']);
@@ -61,6 +67,9 @@ canvas: (function() {
                     obj.Clearance, obj.Velocity);
         });;
 </script>
+
+<!-- -->
+
 
 - Web Demo Source Code: [DWAGL](https://github.com/goktug97/DWAGL)
 - Dynamic Window Approach Source Code: [Dynamic Window Approach](https://github.com/goktug97/DynamicWindowApproach)
