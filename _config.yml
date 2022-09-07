@@ -33,6 +33,10 @@ plugins:
     - jekyll-seo-tag
 
 markdown: CommonMarkGhPages
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
