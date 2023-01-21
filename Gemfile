@@ -19,7 +19,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-commonmark-ghpages'
   gem "webrick", "~> 1.7"
-  gem 'jemoji'
+  gem "jemoji"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
